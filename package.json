@@ -1,0 +1,16 @@
+{
+  "name": "taskrouter-multi-chat-node",
+  "version": "1.0.0",
+  "description": "TaskRouter MultiChat Application for Node.js",
+  "main": "app.js",
+  "author": "Twilio Developer Education",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "browserify": "^14.3.0",
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "promise-retry": "^1.1.1",
+    "twilio": "^3.0.0"
+  }
+}

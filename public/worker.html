@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Twilio Multi-Task Worker</title>
+    <link rel="shortcut icon" href="//www.twilio.com/marketing/bundles/marketing/img/favicons/favicon.ico">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="worker.css">
+</head>
+<body>
+  <div id="workerinfo">
+    <table>
+      <tr>
+        <td><div id="workername"></div></td>
+      </tr>
+    </table>
+  </div>
+  <section id="allchats">
+    <table class="chat-table">
+      <tr>
+        <td id="chat1" style="display:none">
+          <div id="chat1-messages" class="messages"></div>
+          <input id="chat1-input" type="text" placeholder="say anything" autofocus/>
+          <div id="chat1-info"></div>
+        </td>
+        <td id="chat2" style="display:none">
+          <div id="chat2-messages" class="messages chat-hidden"></div>
+          <input id="chat2-input" type="text" placeholder="say anything" autofocus/>
+          <div id="chat2-info"></div>
+        </td>
+        <td id="chat3" style="display:none">
+          <div id="chat3-messages" class="messages chat-hidden"></div>
+          <input id="chat3-input" type="text" placeholder="say anything" autofocus/>
+          <div id="chat3-info"></div>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <script src="https://media.twiliocdn.com/taskrouter/js/v2/twilio-taskrouter-worker.min.js"></script>
+  <script src="https://media.twiliocdn.com/sdk/js/chat/v1.0/twilio-chat.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="worker.js"></script>
+</body>
+</html>
