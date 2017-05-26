@@ -43,6 +43,8 @@ There a few more items you need to configure for this demo.
 
 You will need to configure a Chat service. This is like a database for your Chat Data. You can [generate one in the console here](https://www.twilio.com/console/chat/services). Add this to your `.env` file.
 
+In the configuration, be sure to change `DEFAULT CHANNEL ROLE` to be `Channel Admin`. This will allow deleting of a channel once the Task is complete. 
+
 | Config Value  | Product | Description |
 | :-------------  |:------------- |:------------- |
 `TWILIO_CHAT_SERVICE_SID` | Chat | Like a database for your Chat data - [generate one in the console here](https://www.twilio.com/console/chat/services)
